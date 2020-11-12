@@ -7,7 +7,7 @@ int funcInput(), funcLoop(), funcWhile();
 int main(){
     funcInput();
     funcLoop();
-    funcWhile();
+    // funcWhile();
     return 0;
 }
 
@@ -23,17 +23,21 @@ int funcInput(){
 }
 
 int funcLoop(){
-    for(int i = 2; i < 5; i = i + 1){
-        cout << "Loop - " << i << endl;
-        if (i > 3){
-            break;
-        }
+    int i, s;
+    cout << "Input first : ";
+    cin >> i;
+    cout << "Input second: ";
+    cin >> s;
+    for(int j =i; j < s; j = j + 1){
+        cout << "Loop - " << j << endl;
     }
     return 0;
 }
 
 int funcWhile(){
-    int i = 2;
+    int i;
+    cout << "Input: ";
+    cin >> i;
     while(i < 5){
         cout << "Loop - " << i << endl;
         ++i;
