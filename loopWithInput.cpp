@@ -1,12 +1,13 @@
 #include<iostream>
 using namespace std;
 
-int funcInput(), funcLoop();
+int funcInput(), funcLoop(), funcWhile();
 // int funcLoop();
 
 int main(){
     funcInput();
     funcLoop();
+    funcWhile();
     return 0;
 }
 
@@ -27,6 +28,15 @@ int funcLoop(){
         if (i > 3){
             break;
         }
+    }
+    return 0;
+}
+
+int funcWhile(){
+    int i = 2;
+    while(i < 5){
+        cout << "Loop - " << i << endl;
+        ++i;
     }
     return 0;
 }
