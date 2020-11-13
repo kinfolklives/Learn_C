@@ -1,3 +1,8 @@
+/*
+SYNTAX: 
+Exp1? Exp2: Exp3; 
+*/
+
 #include"under/FunctionOther04.cpp"
 extern int myfunc();
 
@@ -10,6 +15,7 @@ int main(){
 
 // int myfunc01(){
 //     int x,y = 10, var;
+
 //     if(y<10){ var = 30;
 //     }else{ var = 40;
 //     }

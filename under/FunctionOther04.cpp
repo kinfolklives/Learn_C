@@ -4,7 +4,8 @@ using namespace std;
 
 int myfunc(){
     int x,y = 10, var;
-    if(y<10){ var = 30;
+
+    if(y<10){ var = 30;                     // method 1 
     }else{ var = 40;
     }
     cout << "value of x: " << var << endl;
