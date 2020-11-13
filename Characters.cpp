@@ -9,7 +9,8 @@ int main(){
 }
 
 int FuncChar(){
-    char ch;
+    char ch;  // 선언 할 때, 컴퓨터가 공간을 확보한다. 
+              // 오버플로우 : 지정한 공간보다 초과
     
     cout << "Input : ";
     cin >> ch;
