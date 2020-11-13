@@ -1,4 +1,4 @@
-#include"under/namespaceOther.cpp"
+#include"under/namespaceOther.cpp" //프로그래밍규모가 커지면 분할, 상속해서 사용하게 되므로 namespace 사용하게 됨.
 using namespace std;
 using namespace first_space;
 
