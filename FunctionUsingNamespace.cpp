@@ -1,4 +1,6 @@
-#include"under/NameSpaceUsingOthers.cpp"
+// #include"under/NameSpaceUsingOthers.cpp"
+#include"under/NameSpacesUsingOthers.hpp"
+
 using namespace third_space;
 
 int main(){
