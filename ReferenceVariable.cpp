@@ -19,8 +19,8 @@ int main(){
     cout << "Value of second reference: " << ref_second << endl; //11.7
     cout << "Value of second reference: " << &ref_second << endl;  //0x7fffffffdb7c
     
-    cout << "size of first " << sizeof(first) <<endl;  // size of first : 4
-    cout << "size of second " << sizeof(second) << endl; // size of second : 8 >> double 이니까! 
+    cout << "size of first " << sizeof(&ref_first) <<endl;  // size of first : 4 , size of first address : 8
+    cout << "size of second " << sizeof(&ref_second) << endl; // size of second : 8 , size of second address : 8  
     return 0;
 }
 
