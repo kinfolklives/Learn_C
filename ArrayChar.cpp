@@ -1,8 +1,12 @@
+// Array 는 한가지 타입으로만 묶을 수 있다! 
+// \0 가 array 마무리를 의미한다. 
+// cout << " " <<  var  << " " 
+
 #include<iostream>
 using namespace std;
 
 int main(){
-    char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+    char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'}; 
     cout << "Greeting medssage: " << greeting << endl;
     char worldwithoutnull[5] = {'W', 'o', 'r', 'l', 'd'};
     cout << "World without null message: " << worldwithoutnull << endl;
