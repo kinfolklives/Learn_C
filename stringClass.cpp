@@ -16,6 +16,10 @@ int main(){
     len = str3.size();  // total length of str3 after concatenation
     cout << "str3.size(): " << len << endl;
     // str3.size() : 10
+    string str4 = str3 + to_string(len); // string 에 숫자 더할때! 
+    int len2 = str4.size();
+    cout << "str4 : " << str4 << endl;
+    cout << "str4.size(): " << len2 << endl; // HelloWorld10 size is 12 
     return 0;
 
 }

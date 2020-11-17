@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-void swapByReference(int* x, int* y){
-    int temp; temp = *x; *x=*y; *y=temp;
+void swapByReference(int *x, int *y){
+    int temp; temp = x; x=y; y=temp;
     /* same as void swap(int x, int y) */
 }
 
