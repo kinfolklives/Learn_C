@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cstring> 
+#include<cstring>
 
 using namespace std;
 
@@ -33,10 +33,15 @@ struct Opposite opposite[5] = {
     {37,14,1,'#'},
 };
 
-void DisplayInfo();
-
 int main(){
+    char char_row;
+    char char_column;
+
     DisplayInfo();
+    Input_Row_Column();
+    Input(char_row, char_column, **ptr_matrix);
+    Output(**ptr_matrix);
+
     return 0;
 }
 
@@ -53,3 +58,39 @@ void DisplayInfo(){
     }
 }
 
+void Input_Row_Column(){
+
+    char char_row = '*', char_column = '!';
+
+    char **ptr_matrix = new char * [ROWS];
+
+    for (int i =0; i<ROWS; i++)
+        ptr_matrix[i] = new char[COLS];
+
+    cout << "Matrix Size: " << ROWS*COLS << endl;
+}
+
+void Input(char char_row, char char_column, char **ptr_matrix){
+    // 입력
+    for (int i = 0; i < ROWS; i++)
+     for (int j = 0; j < COLS; j++){
+        ptr_matrix[i][j] = ' ';
+        if(j == 2){
+            ptr_matrix[i][j] = char_column;
+        }
+        if(i == 0|| j == 0 || i == ROWS-1 || j == COLS-1){
+            ptr_matrix[i][j] = char_row;
+        }
+    }
+    delete[] ptr_matrix;
+}
+
+void Output(char **ptr_matrix){
+    //출력 - ptr_matrix[i][j] 의 값을 출력
+    for (int i = 0; i < ROWS; i++){
+     for (int j = 0; j < COLS; j++){
+        cout << ptr_matrix[i][j] << ' '; // 한글자일때는 ' '(single) 쓸것
+    }
+        cout << endl; // for 문 밖에서 줄바꿈 해주기.
+    }
+}
