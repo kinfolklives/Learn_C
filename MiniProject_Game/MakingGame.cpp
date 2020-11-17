@@ -33,20 +33,23 @@ struct Opposite opposite[5] = {
     {37,14,1,'#'},
 };
 
+void DisplayInfo();
+
+int main(){
+    DisplayInfo();
+    return 0;
+}
+
 void DisplayInfo(){
     cout << "[주인공]" <<endl;
     cout << "위치: " << mainChar.x << "," << mainChar.y << endl;
     cout << "표시: " << mainChar.display << endl;
 
     int i = 0;
-    for (i = 0; i<10; i++){
-        cout << "[상대]" << endl;
+    for (i = 0; i<5; i++){
+        cout << "[상대 "<<i<<"]" << endl;
         cout << "위치: " << opposite[i].x << "," << opposite[i].y << endl;
         cout << "표시: " << opposite[i].display << endl;
     }
 }
 
-int main(){
-    DisplayInfo();
-    return 0;
-}
