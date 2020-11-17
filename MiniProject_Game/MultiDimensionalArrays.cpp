@@ -1,7 +1,21 @@
 #include<iostream>
 using namespace std;
 
+// void Input(int row, int column, char char_row, char char_column, char **ptr_matrix);
+// void Output(int row, int column, char **ptr_matrix);
+
 int main(){
+    int row, column;
+    char char_row, char_column;
+
+    void Input_Row_Column();
+    void Input(int row, int column, char char_row, char char_column, char **ptr_matrix);
+    void Output(int row, int column, char **ptr_matrix);
+
+    return 0;
+}
+
+void Input_Row_Column(){
     int row, column;
     char char_row = '~', char_column = '!';
 
@@ -16,7 +30,9 @@ int main(){
         ptr_matrix[i] = new char[column];
 
     cout << "Matrix Size: " << row*column << endl;
+}
 
+void Input(int row, int column, char char_row, char char_column, char **ptr_matrix){
     // 입력 
     for (int i = 0; i < row; i++)
      for (int j = 0; j < column; j++){
@@ -28,7 +44,10 @@ int main(){
             ptr_matrix[i][j] = char_row;
         }
     }
+    delete[] ptr_matrix;
+}
 
+void Output(int row, int column, char **ptr_matrix){
     //출력 - ptr_matrix[i][j] 의 값을 출력
     for (int i = 0; i < row; i++){
      for (int j = 0; j < column; j++){
@@ -36,10 +55,6 @@ int main(){
     }
         cout << endl; // for 문 밖에서 줄바꿈 해주기. 
     }
-
-    delete[] ptr_matrix;
-    return 0;
-    
 }
 
 /* 
