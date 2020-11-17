@@ -28,3 +28,4 @@ int main(){
     delete[] ptr_matrix;
     return 0;
     }
+}
