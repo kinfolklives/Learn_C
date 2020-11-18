@@ -7,8 +7,10 @@
             "args": [
                 "-g",
                 "${file}",
+                "-l", 
+                "curses",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
             ],
             "options": {
                 "cwd": "/usr/bin"

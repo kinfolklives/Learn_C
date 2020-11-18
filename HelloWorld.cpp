@@ -1,4 +1,4 @@
-#include <iostream>  //import 와 유사, <> : 표준라이브러리 , " " : 내가 만든 것
+#include <iostream>  //import 와 유사, < > : 표준라이브러리 , " " : 내가 만든 것
 
 //short comment
 /* 

@@ -7,7 +7,7 @@ int main(){
     // start main
     printw("Hello Ncurse!");
 
-getch();    // wait keyboard  >> char ch; cin>> ch; 와 같은 의미 
+    getch();    // wait keyboard  >> char ch; cin>> ch; 와 같은 의미 
 
     // end main
     endwin();
