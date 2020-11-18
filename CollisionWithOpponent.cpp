@@ -10,7 +10,7 @@
 int is_move_okay(int y, int x){
         int campare_ch;
         campare_ch = mvinch(y, x); // 주어진　위치　문자　return
-        return !((campare_ch == 'W'));
+        return !((campare_ch == 'O'));
     }
 
 int main(void) {
