@@ -5,10 +5,10 @@ int main(){
     int row, column;
     char char_row, char_column;
 
-    cout << "Enter Row and Column: " << endl << "Row: "; 
+    cout << "Enter Row and Column: " << endl << "Row: ";
     cin >> row;
     cout << "Column: ";
-    cin >> column; 
+    cin >> column;
 
     char display_row= '!';
     char display_col= '~';
@@ -17,7 +17,7 @@ int main(){
     cout << "Display Column: " << display_col << endl;
 
     char **ptr_matrix = new char*[row];
-    
+
     for (int i =0; i<row; i++){
         ptr_matrix[i] = new char[column];
 
