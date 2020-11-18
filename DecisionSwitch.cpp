@@ -18,7 +18,8 @@ int main(){
     char grade = 'D';
     switch(grade){
         case'B': 
-        case'C': cout << "Well done" << endl;
+        case'C': 
+        cout << "Well done" << endl;
         break;
 
         default:
